@@ -1,0 +1,40 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f172a;
+    color: #b8c3d0;
+}
+
+main {
+    width: 80rem;
+    margin: 0 auto;
+    padding: 6rem;
+}
+
+.half {
+    width: 33rem;
+    margin-right: 1rem;
+}
+
+#left {
+    padding: 0 6rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+#socials {
+    bottom: 0;
+}
+
+.social {
+    display: inline-block;
+}
+
+.social img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
