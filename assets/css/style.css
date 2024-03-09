@@ -106,6 +106,10 @@ header nav .sub {
     font-weight: 700;
 }
 
+h2 {
+    font-size: 2rem;
+}
+
 #socials {
     margin: 2rem 0 0 0.25rem;
     bottom: 0;
@@ -118,4 +122,24 @@ header nav .sub {
 .social img {
     width: 1.5rem;
     height: 1.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+#light {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 70%;
+    pointer-events: none;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(173, 216, 230, 0.3) 0%, rgba(173, 216, 230, 0.1) 50%, rgba(15, 23, 42, 0) 80%, rgba(15, 23, 42, 0) 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translate(-50%, -50%);
+    transition: all 0.1s ease-out;
+    filter: blur(1.5rem);
 }
