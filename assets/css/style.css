@@ -29,6 +29,7 @@ header, main {
     margin-right: 0.5rem;
     padding: 6rem 0;
     height: 100vh;
+    z-index: 1;
 }
 
 header {
@@ -88,6 +89,11 @@ nav a:hover .line {
     background-color: var(--important-text);
 }
 
+nav a:hover .sub,
+nav a.active .sub {
+    color: white;
+}
+
 header nav .line {
     display: inline-block;
     width: 32px;
@@ -136,10 +142,12 @@ h2 {
     height: 70%;
     pointer-events: none;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(173, 216, 230, 0.3) 0%, rgba(173, 216, 230, 0.1) 50%, rgba(15, 23, 42, 0) 80%, rgba(15, 23, 42, 0) 100%);
+    background: radial-gradient(circle, rgba(17, 30, 65, 1) 0%, rgba(17, 30, 65, 0.2) 40%, rgba(17, 30, 65, 0.1) 60%, rgba(15, 23, 42, 0) 100%);
     background-repeat: no-repeat;
     background-position: center;
     transform: translate(-50%, -50%);
     transition: all 0.1s ease-out;
-    filter: blur(1.5rem);
+    filter: blur(5rem);
+    z-index: -1;
 }
+
