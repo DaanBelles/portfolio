@@ -3,14 +3,20 @@
 }
 
 :root {
+    /* font */
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1;
+
+    /* colors */
     --important-text: #e2e8f0;
     --normal-text: #94A3B8;
     --low-vis-text: #64748B;
+    --social-hover: #c4d0ec;
+    --cyan-links: #4db3bb;
 }
 
 body {
     background-color: #0f172a;
-    font-family: 'Open Sans', sans-serif;
     letter-spacing: 1px;
     width: 80rem;
     margin: 0 auto;
@@ -40,6 +46,12 @@ header {
 
 main {
     overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+main::-webkit-scrollbar {
+    display: none;
 }
 
 h1 {
@@ -56,6 +68,7 @@ h2 {
     font-size: 1.5rem;
     color: var(--important-text);
     margin-top: 0.75rem;
+    font-weight: 500;
 }
 
 #intro p {
@@ -112,10 +125,6 @@ header nav .sub {
     font-weight: 700;
 }
 
-h2 {
-    font-size: 2rem;
-}
-
 #socials {
     margin: 2rem 0 0 0.25rem;
     bottom: 0;
@@ -123,11 +132,17 @@ h2 {
 
 .social {
     display: inline-block;
+    margin-right: 1.25rem;
+    cursor: pointer;
 }
 
 .social img {
     width: 1.5rem;
     height: 1.5rem;
+}
+
+.social img:hover {
+    filter: brightness(1.5);
 }
 
 .hidden {
@@ -151,3 +166,16 @@ h2 {
     z-index: -1;
 }
 
+#about, #education {
+    margin-bottom: 8rem;
+}
+
+#about p {
+    color: var(--low-vis-text);
+    margin-bottom: 1rem;
+    line-height: 1.625;
+}
+
+#about p:last-of-type {
+    margin-bottom: 0;
+}
