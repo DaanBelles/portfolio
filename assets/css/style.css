@@ -179,3 +179,28 @@ header nav .sub {
 #about p:last-of-type {
     margin-bottom: 0;
 }
+
+.highlight {
+    color: var(--important-text);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.highlight:hover {
+    color: var(--cyan-links);
+}
+
+#credits {
+    color: var(--low-vis-text);
+    line-height: 1.625rem;
+}
+
+#credits .highlight {
+    color: var(--normal-text);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+#credits .highlight:hover {
+    color: var(--cyan-links);
+}
