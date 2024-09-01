@@ -7,36 +7,67 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/script.js"></script>
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <title>Portfolio of Daan Belles</title>
 </head>
 <body>
-    <main>
-        <div id="light"></div>
-        <div id="left" class="half">
-            <div id="intro">
-                <h1>Daan Belles</h1>
-                <h2>Software Engineering student</h2>
-                <p>I'm a Computer Science student at Howest focusing on Software Engineering. With a passion for coding and problem-solving, I'm dedicated to creating impactful tech solutions.</p>
-            </div>
-            <div id="headings">
-                <h3>about</h3>
-                <h3>education</h3>
-                <h3>projects</h3>
-            </div>
-            <ul id="socials">
-                <li class="social"><img src="images/githubIcon.png" alt="GitHub"></li>
-                <li class="social"><img src="images/githubIcon.png" alt="GitHub"></li>
-                <li class="social"><img src="images/githubIcon.png" alt="GitHub"></li>
-                <li class="social"><img src="images/githubIcon.png" alt="GitHub"></li>
-                <li class="social"><img src="images/githubIcon.png" alt="GitHub"></li>
-                <li class="social"><img src="images/githubIcon.png" alt="GitHub"></li>
-            </ul>
+    <div id="light"></div>
+    <header>
+        <div id="intro">
+            <h1><a href="#">Daan Belles</a></h1>
+            <h2>Software Engineering student</h2>
+            <p>I'm a Computer Science student at Howest focusing on Software Engineering. With a passion for coding and problem-solving, I'm dedicated to creating impactful tech solutions.</p>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active"><span class="line"></span><span class="sub">about</span></a></li>
+                    <li><a href="#"><span class="line"></span><span class="sub">education</span></a></li>
+                    <li><a href="#"><span class="line"></span><span class="sub">projects</span></a></li>
+                </ul>
+            </nav>
         </div>
-        <div id="right" class="half">
-            <h3 class="hidden">about</h3>
-            <h3 class="hidden">education</h3>
-            <h3 class="hidden">projects</h3>
+        <ul id="socials">
+            <li class="social"><a href="https://github.com/DaanBelles" target="_blank"><img src="images/githubIcon.svg" alt="GitHub"></a></li>
+            <li class="social"><a href="https://www.linkedin.com/in/daan-belles-6a813126b/" target="_blank"><img src="images/linkedInIcon.svg" alt="LinkedIn"></a></li>
+            <li class="social"><a href="https://www.instagram.com/daanbelles_/" target="_blank"><img src="images/instagramIcon.svg" alt="Instagram"></a></li>
+            <li class="social"><img src="images/linkedInIcon.svg" alt="GitHub"></li>
+            <li class="social"><img src="images/linkedInIcon.svg" alt="GitHub"></li>
+            <li class="social"><img src="images/linkedInIcon.svg" alt="GitHub"></li>
+        </ul>
+    </header>
+    <main>
+        <div id="content">
+            <div id="about">
+                <p>Lorem ipsum dolor sit amet, <a class="highlight">consectetur</a> adipisicing elit. Accusantium adipisci aliquid commodi cum fugiat, hic ipsum iusto minus nam nostrum nulla quae quam sunt tempore unde voluptas voluptate! Molestias, nemo.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci architecto at beatae deleniti error ex, exercitationem laudantium molestias neque nobis odio odit quisquam repellendus saepe sit suscipit velit veritatis.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ducimus fugiat, in iste magni reprehenderit.</p>
+            </div>
+            <div id="education">
+                <div>
+                    <div class="time">
+                        <p>2022 - PRESENT</p>
+                    </div>
+                    <div class="info">
+                        <h3 class="title"></h3>
+                        <h4 class="institution"></h4>
+                        <p class="description"></p>
+                    </div>
+                </div>
+            </div>
+            <div id="projects">
+                <div class="project">
+                    <div class="image-space">
+                        <img src="#" class="projectImg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3 class="title"></h3>
+                        <p class="description"></p>
+                        <ul class="tags"></ul>
+                    </div>
+                </div>
+            </div>
+            <p id="credits">Coded using <a href="https://www.jetbrains.com/webstorm/" target="_blank" class="highlight">JetBrains Webstorm</a> by yours truly. Built using only HTML, CSS and JS. All text is in the <a href="https://rsms.me/inter/" target="_blank" class="highlight">Inter</a> typeface.</p>
         </div>
     </main>
 </body>
